@@ -19,6 +19,7 @@
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
             <div class="collapse navbar-collapse" id="Navbar">
@@ -31,22 +32,29 @@
             </div>
         </div>
     </nav>
+
     <header class="jumbotron">
-        
         <div class="container">
             <div class="row row-header">
-                
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 
-                <div class="col-12 col-sm offset-3 align-self-center">
+                <div class="col-12 offset-1 col-sm-3 offset-sm-0 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
-                </div>>          
+                </div>
+                
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a href="#C4" >
+                        <div style="padding-top: 30px; padding-bottom: 40px; padding-left: 30px;">
+                            <button type="button" class="btn btn-warning btn-sm w-75">Reserve a Table</button>
+                        </div>
+                    </a>  
+                </div>
+              
             </div>
         </div>
-        
     </header>
 
     <div class="container">
@@ -78,8 +86,13 @@
             </div>
             
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-0 mb-1">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
+                </div>
             </div>
             
         </div>
@@ -105,6 +118,41 @@
                     </div>
                 </div>
             </div>                    
+        </div>
+        <div class="row row-content align-items-center" id="C4">
+            <div class="col-12 col-sm-8">
+                <div class="card">
+                    <h3 class="card-header bg-yellow text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="no. of guest" class="col-12 col-sm-2 col-form-label">Number of guest</label>
+                                <div class="col-12 col-sm-6 form-check">
+                                    <input type="radio" class="form-check-inline" name="numbers" value="1" checked>1
+                                    <input type="radio" class="form-check-inline" name="numbers" value="2">2
+                                    <input type="radio" class="form-check-inline" name="numbers" value="3">3
+                                    <input type="radio" class="form-check-inline" name="numbers" value="4">4
+                                    <input type="radio" class="form-check-inline" name="numbers" value="5">5
+                                    <input type="radio" class="form-check-inline" name="numbers" value="6">6
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="date and time" class="col-12 col-sm-2 col-form-label">Date and Time</label>
+                                <div class="col-12 col-sm-4">
+                                    <input type="date" class="form-control" name="Date" value="" placeholder="Date">
+                                </div>
+                                <div class="col-12 col-sm-2">
+                                    <input type="time" class="form-control" name="time" value="" placeholder="Time">
+                                </div>
+                            </div> 
+                            <div class="form-group row">
+                                <button type="submit" class="btn btn-primary offset-3 offset-sm-2">Reserve</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
 
