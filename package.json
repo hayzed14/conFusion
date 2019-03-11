@@ -19,10 +19,18 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.23.6",
+    "browser-sync": "^2.26.3",
     "cssmin": "^0.4.3",
-    "gulp": "^3.9.1",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-flatmap": "^1.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-rev": "^9.0.0",
     "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.1",
+    "gulp-usemin": "^0.3.29",
     "htmlmin": "0.0.7",
     "lite-server": "^2.3.0",
     "node-sass": "^4.11.0",
@@ -35,8 +43,10 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "bootstrap-social": "^5.1.1",
+    "braces": "^2.3.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
+    "mime": "^2.0.3",
     "popper.js": "^1.12.9"
   }
 }
